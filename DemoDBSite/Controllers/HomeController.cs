@@ -13,6 +13,12 @@ namespace DemoDBSite.Controllers
             return View();
         }
 
+        [Authorize]
+        public ActionResult Welcome()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -22,7 +28,7 @@ namespace DemoDBSite.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "For assistance and support, contact:";
 
             return View();
         }

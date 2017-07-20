@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Welcome";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<div class="lead">@Html.ActionLink("Signout", "SignOut", "Account")</div>
+<br/>
+<h2>Welcome <b>@Context.User.Identity.Name</b>!</h2>
+<p>This paragraph is a place-mark for a description of their authorization privileges</p>
+<div>Followed by a list of links to their access levels</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<div class="lead">@Html.ActionLink("Back to Main", "Index", "Home")</div>
+
+
+
+

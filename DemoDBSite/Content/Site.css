@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 200px;
     padding-bottom: 20px;
 }
 
@@ -7,6 +7,13 @@
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+/* Set header text color and alignment*/
+.headerText{
+    text-align: right;
+    color: white;
+    margin: 90px 20px 20px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
