@@ -163,7 +163,7 @@ namespace DemoDBSite.Models.EntityManager
             using (BCDemoDBEntities db = new BCDemoDBEntities())
             {
                 userAssignedRoleID = db.SYSUserRoles.Where(o => o.SYSUserID == userID)?.FirstOrDefault().LOOKUPRoleID;
-                userGender = db.SYSUserProfiles.Where(o => o.SYSUserID == userID)?.FirstOrDefault().Gender;
+                userGender = db.SYSUserProfiles.Where(o => o.SYSUserID == userID).FirstOrDefault()?.Gender;
             }
 
             List<Gender> genders = new List<Gender>();
