@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "AdminOnly";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="divUserListContainer">
+    @Html.Action("ManageUserPartial", "Home");
+</div>
+
+<br />
+<div class="lead">@Html.ActionLink("Signout", "SignOut", "Account")</div>
+<br />
+<h2>For Admin users only!</h2>
+<br />
+<p>This paragraph is a place-mark for a list of further admin-privileges</p>
+<br />
+<br />
+<br />
+<br />
+<div class="lead">@Html.ActionLink("Back to Welcome Page", "Welcome", "Home")</div>
